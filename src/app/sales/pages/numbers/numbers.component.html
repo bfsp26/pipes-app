@@ -1,0 +1,23 @@
+<div class="text-layout">
+  <h1>DecimalPipe</h1>
+  <p>Transform a number into a string, formatted according to locale rules that determine group sizing and separator,
+    decimal-point character, and other local-specific configurations.</p>
+</div>
+
+<div class="grid">
+  <div class="col-4">
+    <p-card header="Decimalpipe" [subheader]="decimal_pipe">
+      <i class="pi pi-dollar"></i> {{net_sales | number:'1.2-2'}}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="CurrencyPipe" [subheader]="currency_pipe">
+      {{net_sales + 10000 | currency:'USD':'symbol-narrow'}}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="PercentPipe" [subheader]="percent_pipe">
+      {{percentaje | percent}}
+    </p-card>
+  </div>
+</div>

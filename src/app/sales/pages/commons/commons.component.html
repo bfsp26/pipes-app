@@ -1,0 +1,50 @@
+<div class="text-layout">
+  <h1>Commons Pipes</h1>
+  <p>Pipes included in Angular</p>
+</div>
+
+<div class="grid">
+  <div class="col-4">
+    <p-card header="UpperCasePipe" [subheader]="upper_text">{{upper_text | uppercase}}</p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="LowerCasePipe" [subheader]="lower_text">{{lower_text | lowercase}}</p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="TitleCasePipe" [subheader]="title_text">{{title_text | titlecase}}</p-card>
+  </div>
+</div>
+
+<div class="text-layout">
+  <h1>DatePipe</h1>
+  <p>Pipes included in Angular</p>
+</div>
+
+<div class="grid">
+  <div class="col-6">
+    <p-card>
+      <ol>
+        <li>date</li>
+        <li>date | date</li>
+        <li>date | date:'short'</li>
+        <li>date | date:'medium'</li>
+        <li>date | date:'long'</li>
+        <li>date | date:'full'</li>
+        <li>date | date:'MMMM dd, yyyy'</li>
+      </ol>
+    </p-card>
+  </div>
+  <div class="col-6">
+    <p-card>
+      <ol>
+        <li>{{date}}</li>
+        <li>{{date | date}}</li>
+        <li>{{date | date:'short'}}</li>
+        <li>{{date | date:'medium'}}</li>
+        <li>{{date | date:'long'}}</li>
+        <li>{{date | date:'full'}}</li>
+        <li>{{date | date:'MMMM dd, yyyy'}}</li>
+      </ol>
+    </p-card>
+  </div>
+</div>
