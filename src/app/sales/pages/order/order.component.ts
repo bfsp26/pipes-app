@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-order',
@@ -6,11 +7,34 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class OrderComponent implements OnInit {
+export class OrderComponent {
 
-  constructor() { }
+  checked: boolean = true;
+  mayus_text: string = 'Bryan';
 
-  ngOnInit(): void {
+  items!: MenuItem[];
+
+  ngOnInit() {
+    this.items = [
+      {
+        label: 'Update',
+        icon: 'pi pi-refresh'
+      },
+      {
+        label: 'Delete',
+        icon: 'pi pi-times'
+      },
+      {
+        label: 'Angular Website',
+        icon: 'pi pi-external-link',
+        url: 'http://angular.io'
+      },
+      {
+        label: 'Router',
+        icon: 'pi pi-upload',
+        routerLink: '/fileupload'
+      }
+    ];
   }
 
 }

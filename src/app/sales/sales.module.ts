@@ -7,6 +7,8 @@ import { OrderComponent } from './pages/order/order.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { FormsModule } from '@angular/forms';
 
+import { MayusPipe } from './pipes/mayus.pipe';
+
 
 
 @NgModule({
@@ -14,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     NumbersComponent,
     NoCommonsComponent,
     CommonsComponent,
-    OrderComponent
+    OrderComponent,
+    MayusPipe
   ],
   imports: [
     CommonModule,

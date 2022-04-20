@@ -1,1 +1,36 @@
-<p>order works!</p>
+<div class="text-layout">
+  <h1>Custom Pipes</h1>
+  <p>Pipes not included in Angular</p>
+</div>
+
+<div class="grid">
+  <div class="col-4">
+    <p-card header="MayusPipe" [subheader]="mayus_text">
+      {{mayus_text | mayus:checked}}
+      <br>
+      <hr>
+
+      <p-toggleButton onLabel="mayus" offLabel="minus" onIcon="pi pi-check" offIcon="pi pi-times" [(ngModel)]="checked">
+      </p-toggleButton>
+    </p-card>
+
+  </div>
+</div>
+
+
+<!-- <p-toolbar>
+  <div class="p-toolbar-group-left">
+      <p-button label="New" icon="pi pi-plus" class="mr-2"></p-button>
+      <p-button label="Upload" icon="pi pi-upload" styleClass="p-button-success"></p-button>
+          
+      <i class="p-toolbar-separator pi pi-bars mr-2" style="vertical-align: middle"></i>
+      
+      <p-splitButton label="Save" icon="pi pi-check" [model]="items" styleClass="p-button-warning"></p-splitButton>
+  </div>
+  
+  <div class="p-toolbar-group-right">
+      <p-button icon="pi pi-search" class="mr-2"></p-button>
+      <p-button icon="pi pi-calendar" styleClass="p-button-success mr-2"></p-button>
+      <p-button icon="pi pi-times" styleClass="p-button-danger"></p-button>
+  </div>
+</p-toolbar> -->
